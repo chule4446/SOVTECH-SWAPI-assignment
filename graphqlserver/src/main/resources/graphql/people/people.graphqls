@@ -1,0 +1,23 @@
+schema {
+    query: Query
+}
+
+type Query{
+    people: Swapi
+    person(name: String): Swapi
+    page(page: String): Swapi
+}
+
+type Swapi{
+    next:String!
+    results:[People!]!
+}
+
+type People{
+    name: String!
+    height: String!
+    mass: String!
+    gender: String!
+    homeworld: String!
+}
+
