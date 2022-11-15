@@ -15,7 +15,6 @@ import reactor.core.publisher.Mono;
 @RestController
 @RequiredArgsConstructor
 @Slf4j
-@CrossOrigin(origins = "*")
 @RequestMapping("/api/v1/swapi")
 public class PeopleController {
     private final GraphQLProvider provider;
